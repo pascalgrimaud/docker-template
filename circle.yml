@@ -1,0 +1,11 @@
+machine:
+  services:
+    - docker
+dependencies:
+  override:
+    - docker info
+    - docker build -t pascalgrimaud/<container>:<version> .
+test:
+  override:
+    - docker run -d -p <port>:<port> --name=<container_test> -e <NAME>_PASS="pgrimaud" pascalgrimaud/<container>:<version> ; sleep <time>
+    - docker logs <container_test>
