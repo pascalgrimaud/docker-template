@@ -1,4 +1,4 @@
-[![logo](https://raw.githubusercontent.com/pascalgrimaud/docker-template/master/template_logo.png)]
+[![logo](https://raw.githubusercontent.com/pascalgrimaud/docker-template/master/docker-logo-loggedout.png)]
 (https://www.docker.com/)
 
 ```
