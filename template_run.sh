@@ -4,7 +4,7 @@ echo "Starting container : CONTAINER VERSION"
 
 
 # change the password
-if [ ! -f /.init_password ]; then
+if [ ! -f /.password ]; then
 	echo "Initializing the user password..."
 
 	# generate password
@@ -12,7 +12,7 @@ if [ ! -f /.init_password ]; then
 	# change password
     # ---> put code here
     # touch this file ...
-	touch /.init_password
+	touch /.password
 
 	echo "Initializing the user password : done!"
 fi
