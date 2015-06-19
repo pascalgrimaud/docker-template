@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Starting container : CONTAINER VERSION"
+echo "Starting container : <container> <version>"
 
 
 # change the password
@@ -14,7 +14,7 @@ if [ ! -f /.password ]; then
     # touch this file ...
 	touch /.password
 
-	echo "Initializing the user password : done!"
+	echo "Initializing the user password : ok"
 fi
 
 # display info

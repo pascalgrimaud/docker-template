@@ -2,7 +2,7 @@
 (https://www.docker.com/)
 
 ```
-[![Circle CI](https://circleci.com/gh/pascalgrimaud/docker-template.svg?style=svg)]
+[![Circle CI](https://circleci.com/gh/pascalgrimaud/docker-template.svg?style=shield)]
 (https://circleci.com/gh/pascalgrimaud/docker-template)
 ```
 
@@ -22,15 +22,24 @@ The GitHub project :
 You can clone this project and build with docker command :
 
 ```
-git clone https://github.com/pascalgrimaud/docker-template.git
-cd docker-template
-docker build -t pascalgrimaud/<container>:<version> .
+git clone https://github.com/pascalgrimaud/docker-template.git \
+&& cd docker-template \
+&& docker build -t pascalgrimaud/<container>:<version> .
 ```
 
 You can build directly from the [GitHub project](https://github.com/pascalgrimaud/docker-template/) :
 
 ```
 docker build -t pascalgrimaud/<container>:<version> github.com/pascalgrimaud/docker-template.git
+```
+
+
+# Help
+
+To display usage :
+
+```
+docker run pascalgrimaud/<container>:<version> /help
 ```
 
 
@@ -45,7 +54,7 @@ docker run -d -p <port>:<port> pascalgrimaud/<container>:<version>
 To get the password :
 
 ```
-docker logs <id>
+docker logs <container id>
 ```
 
 Start and set a specific password for postgres user :
